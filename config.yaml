@@ -1,0 +1,9 @@
+system_file: system.txt
+user_file: template.txt
+output_file: output.txt
+token_files:
+  - file1.txt
+  - file2.txt
+  - file3.txt
+gpt_temp: 0.7
+gpt_model: gpt-3.5-turbo

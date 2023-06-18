@@ -1,0 +1,41 @@
+[
+    {
+        "name": "describe_opportunity",
+        "description": "Describe an opportunity",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "OpportunityName": {
+                    "type": "string",
+                    "description": "Name of the opportunity"
+                },
+                "BusinessFunction": {
+                    "type": "string",
+                    "description": "Function of the business related to the opportunity"
+                },
+                "TechnologyUsed": {
+                    "type": "string",
+                    "description": "Technology used in the opportunity"
+                },
+                "OpportunityDescription": {
+                    "type": "string",
+                    "description": "Description of the opportunity"
+                },
+                "OpportunityBenefits": {
+                    "type": "array",
+                    "description": "List of benefits of the opportunity",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "required": [
+            "OpportunityName",
+            "BusinessFunction",
+            "TechnologyUsed",
+            "OpportunityDescription",
+            "OpportunityBenefits"
+        ]
+    }
+]
